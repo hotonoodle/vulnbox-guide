@@ -7,7 +7,7 @@
     <title>Kioptrix 1 Walkthrough</title>
 </head>
 <body>
-    <h1>Kioptrix 1 (2014)</h1>
+    <h1>Kioptrix 1</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quasi, mollitia neque repellat odio consequuntur quas culpa ipsa perferendis magni?</p>
 
     <h3>Enumeration / Information Gathering</h3>
@@ -20,6 +20,22 @@
     <p>Enumerate active port connections using network mapper (nmap).</p>
     <img src="../img/kioptrix-1/nmap-result.png"><br>
 
+    <p>Apache Module mod_ssl 2.8.4 is found. Google search and we will find an exploit for it.</p>
+    <img src="../img/kioptrix-1/google-search-modssl-exploit.png"><br>
+
+    <p>Digging through GitHub, we will first get familiar on how to use the exploit.</p>
+    <img src="../img/kioptrix-1/readme-modssl-exploit.png">
+
+    <h3>Exploitation</h3>
+    <p>Let us try the exploit found.</p>
+    <img src="../img/kioptrix-1/modssl-exploitation.png">
+
+    <p>Run the program.</p>
+    <img src="../img/kioptrix-1/pwned.png">
+
+    <p>Excellent! We have rooted Kioptrix 1.</p>
+
+    <br>
     <br>
     <a href="../index.html">Main Page</a>
 </body>
