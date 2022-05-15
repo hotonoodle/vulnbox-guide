@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Kioptrix 1 Walkthrough</title>
 </head>
 <body>
-    <h1>Kioptrix 1</h1>
+    <div class="kioptrix">
+        <h1>Kioptrix 1</h1>
 
-    <h3>Enumeration / Information Gathering</h3>
+        <h3>Enumeration / Information Gathering</h3>
 
-    <p>Using netdiscover, we will find what systems are connected to the network our ethernet interface is in.</p>
+        <p>Using netdiscover, we will find what systems are connected to the network our ethernet interface is in.</p>
 
-    <img src="../img/kioptrix-1/netdiscover.png"><br>
-    <img src="../img/kioptrix-1/netdiscover-result.png"><br>
+        <img src="../img/kioptrix-1/netdiscover.png"><br>
+        <img src="../img/kioptrix-1/netdiscover-result.png"><br>
 
-    <p>Enumerate active port connections using network mapper (nmap).</p>
-    <img src="../img/kioptrix-1/nmap-result.png"><br>
+        <p>Enumerate active port connections using network mapper (nmap).</p>
+        <img src="../img/kioptrix-1/nmap-result.png"><br>
 
-    <p>Apache Module mod_ssl 2.8.4 is found. Google search and we will find an exploit for it.</p>
-    <img src="../img/kioptrix-1/google-search-modssl-exploit.png"><br>
+        <p>Apache Module mod_ssl 2.8.4 is found. Google search and we will find an exploit for it.</p>
+        <img src="../img/kioptrix-1/google-search-modssl-exploit.png"><br>
 
-    <p>Digging through GitHub, we will first get familiar on how to use the exploit.</p>
-    <img src="../img/kioptrix-1/readme-modssl-exploit.png">
+        <p>Digging through GitHub, we will first get familiar on how to use the exploit.</p>
+        <img src="../img/kioptrix-1/readme-modssl-exploit.png">
 
-    <h3>Exploitation</h3>
-    <p>Let us try the exploit found.</p>
-    <img src="../img/kioptrix-1/modssl-exploitation.png">
+        <h3>Exploitation</h3>
+        <p>Let us try the exploit found.</p>
+        <img src="../img/kioptrix-1/modssl-exploitation.png">
 
-    <p>Run the program.</p>
-    <img src="../img/kioptrix-1/pwned.png">
+        <p>Run the program.</p>
+        <img src="../img/kioptrix-1/pwned.png">
 
-    <p>Excellent! We have rooted Kioptrix 1.</p>
+        <p>Excellent! We have rooted Kioptrix 1.</p>
 
-    <br>
-    <br>
-    <a href="../index.html">Main Page</a>
+        <br>
+        <br>
+        <a href="../index.html">Main Page</a>
+    </div>
 </body>
 </html>
